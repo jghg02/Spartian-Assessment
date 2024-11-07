@@ -13,6 +13,8 @@ Features
 - Caches character data locally using Core Data to reduce network requests.
 - Implements a loading indicator for seamless user experience while data is being fetched.
 
+https://github.com/user-attachments/assets/c7c8e1fb-c0bb-426b-b229-a18406e833eb
+
 ## Architecture
 
 ### Clean Architecture
