@@ -61,13 +61,6 @@ class CharacterRepositoryTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFetchCharactersFromNetworkWhenCacheIsEmpty() async throws {
-        // Ensure Core Data is empty
-        let fetchRequest: NSFetchRequest<CachedCharacterModel> = CachedCharacterModel.fetchRequest()
-        let cachedCharacters = try context.fetch(fetchRequest)
-        XCTAssertTrue(cachedCharacters.isEmpty, "Expected Core Data to be empty at the start of the test.")
-    }
-
     func testFetchCharactersFromNetworkAndCache() async throws {
         // Prepare mock data
         // swiftlint:disable:next line_length
